@@ -119,6 +119,12 @@ const Register = () => {
                       />
                     </div>
 
+                    <div className={styles.login_details}>
+                      <h5>Login Details</h5>
+                      <small>Email : brightlayo11@gmail.com</small>
+                      <small>Password : Brightlayo1!</small>
+                    </div>
+
                     <form onSubmit={handleSubmit}>
                       <div className={styles.form_group}>
                         <label htmlFor='email'>Email Address</label>

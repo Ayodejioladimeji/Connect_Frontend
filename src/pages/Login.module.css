@@ -11,6 +11,21 @@
   display: flex;
 }
 
+.login_details {
+  background: var(--light);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.login_details h5 {
+  font-size: 15px;
+}
+
+.login_details small {
+  font-size: 14px;
+  display: block;
+}
+
 /* THE SECTION OF THE login LEFT */
 .login_left {
   width: 40%;
@@ -50,6 +65,8 @@
 .login_right_div {
   width: 90%;
   padding: 10px;
+  margin-bottom: 20px;
+
   /* background: orange; */
 }
 

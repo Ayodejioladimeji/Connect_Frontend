@@ -8,7 +8,6 @@ import io from 'socket.io-client';
 
 // COMPONENTS
 import { GLOBALTYPES } from './redux/actions/globalTypes';
-import { refreshToken } from './redux/actions/authAction';
 import styles from './GlobalStyle.module.css';
 import Routes from './routes/Routes';
 import Alert from './components/alert/Alert';
@@ -22,8 +21,6 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(refreshToken());
-
     const socket = io();
     dispatch({ type: GLOBALTYPES.SOCKET, payload: socket });
     return () => socket.close();
